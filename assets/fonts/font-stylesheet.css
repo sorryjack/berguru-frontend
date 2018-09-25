@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Effra';
+    src: url('EffraLight-Regular.eot');
+    src: url('EffraLight-Regular.eot?#iefix') format('embedded-opentype'),
+        url('EffraLight-Regular.woff2') format('woff2'),
+        url('EffraLight-Regular.woff') format('woff'),
+        url('EffraLight-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Effra';
+    src: url('EffraHeavy-Italic.eot');
+    src: url('EffraHeavy-Italic.eot?#iefix') format('embedded-opentype'),
+        url('EffraHeavy-Italic.woff2') format('woff2'),
+        url('EffraHeavy-Italic.woff') format('woff'),
+        url('EffraHeavy-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Effra';
+    src: url('EffraHeavy-Regular.eot');
+    src: url('EffraHeavy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('EffraHeavy-Regular.woff2') format('woff2'),
+        url('EffraHeavy-Regular.woff') format('woff'),
+        url('EffraHeavy-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Effra';
+    src: url('Effra-Regular.eot');
+    src: url('Effra-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Effra-Regular.woff2') format('woff2'),
+        url('Effra-Regular.woff') format('woff'),
+        url('Effra-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-Regular.eot');
+    src: url('AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('AvenirNextLTPro-Regular.woff') format('woff'),
+        url('AvenirNextLTPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-It.eot');
+    src: url('AvenirNextLTPro-It.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNextLTPro-It.woff2') format('woff2'),
+        url('AvenirNextLTPro-It.woff') format('woff'),
+        url('AvenirNextLTPro-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}

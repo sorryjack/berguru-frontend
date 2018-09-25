@@ -1,0 +1,206 @@
+body{
+  font-family: 'Avenir Next LT Pro';
+}
+.navbar-header .navbar-brand{
+  background-color: #123899;
+  font-family: 'effra';
+  font-weight: 900;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  float: none;
+}
+.navbar-header .left-header{
+  background-color: #123899;
+
+}
+.navbar-custom{
+  background-color: #122c70;
+}
+.navbar-right .dropdown{
+  background-color: transparent;
+}
+.dropdown.user-menu a.dropdown-toggle{
+  width: auto;
+  height: 100%;
+  padding-left: 28px;
+  font-weight: 900;
+  padding-top: 13px;
+}
+.user-menu{
+  border-left: 1px solid #123899;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 60px;
+  border-radius: 0;
+}
+.dropdown.user-menu .user-photo img{
+  width: 100%;
+  height: 100%;
+}
+.dropdown.user-menu .user-name{
+  display: inline-block;
+}
+.dropdown.user-menu .user-photo{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius:50%;
+  margin-left: 5px;
+}
+.dropdown .label{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 7px 0 0;
+  text-align: center;
+}
+.nav-breadcrumb{
+  display: inline-block;
+  float: left;
+}
+.nav-breadcrumb .breadcrumb{
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 19px;
+  font-size: 14px;
+}
+.nav-breadcrumb .breadcrumb a{
+  color: #fff;
+}
+.nav-breadcrumb .breadcrumb>.active{
+  color: #b7b7b7;
+}
+.profile-sidebar{
+  text-align: center;
+  padding: 40px 0 20px;
+}
+.profile-userpic{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+.profile-userpic img{
+  width: 100%;
+  height: 100%;
+  float: none;
+  margin: 0;
+}
+.profile-usertitle{
+  float: none;
+  text-align: center;
+  margin: 5px;
+}
+.profile-usertitle-name{
+  font-size: 16px;
+  font-weight: bold;
+}
+.profile-usertitle-status{
+  text-transform: lowercase;
+  font-size: 12px;
+}
+.btn-hakakses{
+  color: #2a9650;
+  width: 136px;
+  height: 29px;
+  border-radius: 14.5px;
+  background-color: rgba(42, 150, 80, 0.1);
+  padding: 6px 0 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.sidebar ul.nav .active >a,
+.sidebar ul.nav .active > a:hover,
+.sidebar ul.nav .active > a:focus,
+.sidebar ul.nav li.parent.active >a,
+.sidebar ul.nav li.parent.active >a:hover,
+.sidebar ul.nav li.parent.active >a:focus,
+.sidebar ul.nav li.parent >a.active,
+.sidebar ul.nav li.parent >a.active:hover,
+.sidebar ul.nav li.parent >a.active:focus{
+  color: #4056f6;
+  background-color: #ffffff;
+  border-left: 4px solid #4056f6;
+}
+.sidebar ul.nav a:hover{
+  color: #4056f6;
+  background-color: #ffffff;
+  border-left: 4px solid #4056f6;
+}
+.sidebar ul.nav li.parent ul li a{
+  padding-top: 0;
+    background-color: #fff;
+    padding-left: 40px;
+}
+.sidebar ul.nav li.parent ul li a:hover,
+.sidebar ul.nav li.parent ul li a:focus,
+.sidebar ul.nav li.parent ul li a.active,
+.sidebar ul.nav li.parent ul li a.active:hover,
+.sidebar ul.nav li.parent ul li a.active:focus{
+  color: #4056f6;
+  background-color: #fff;
+}
+.sidebar ul.nav li.parent a,
+.sidebar ul.nav li a{
+  font-size: 14px;
+  border-left: 4px solid #fff;
+  padding-top: 14px;
+}
+/* main content */
+.main-container{
+  margin: 40px 20px;
+}
+/* panel */
+.panel-plain .panel-heading{
+line-height: 20px;
+padding: 25px;
+margin-bottom: 20px;
+}
+.panel-plain .panel-body{
+  /* padding: 20px; */
+}
+.panel-plain .panel-heading h1{
+  margin: 0;
+  font-size: 24px;
+}
+.panel-plain .panel-heading p{
+  color: #878787;
+  font-size: 14px;
+  margin: 0;
+}
+/* responsive */
+@media (min-width: 768px){
+  /* .navbar-header .navbar-brand{
+    width: 25%;
+  } */
+}
+@media (min-width: 1200px){
+  /* .navbar-header .navbar-brand{
+    width: 16.66666667%;
+  } */
+}
+@media (max-width: 767px){
+  .navbar-custom{
+    height: auto;
+  }
+  .navbar-toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  body{
+    padding-top: 120px;
+  }
+  .user-name{
+    max-width: 95px;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: -7px;
+  }
+}
