@@ -34,3 +34,36 @@ $(document).on('click', '.panel-heading span.clickable', function(e){
 		$this.find('em').removeClass('fa-toggle-down').addClass('fa-toggle-up');
 	}
 })
+
+$('.datatable').dataTable({
+	order: [],
+	'columnDefs': [
+			{
+					'orderable': false,
+					'targets': [-1,'no-sort']
+			}
+	],
+	'dom': '<"row"<"col-sm-12 text-right">> <"row"<"col-sm-6"><"col-sm-6">> <"row"<"col-sm-12"t>> <"row"<"col-sm-6"><"col-sm-6"p>>',
+});
+
+// file input
+var inputs = document.querySelectorAll( '.input-file' );
+Array.prototype.forEach.call( inputs, function( input )
+{
+	var label	 = input.nextElementSibling,
+		labelVal = label.innerHTML;
+
+	input.addEventListener( 'change', function( e )
+	{
+		var fileName = '';
+		if( this.files && this.files.length > 1 )
+			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+		else
+			fileName = e.target.value.split( '\\' ).pop();
+
+		if( fileName )
+			label.querySelector( 'span' ).innerHTML = fileName;
+		else
+			label.innerHTML = labelVal;
+	});
+});

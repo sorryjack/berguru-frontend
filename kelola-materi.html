@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Kelola Pengguna - Berguru.com</title>
+	<title>Kelola Materi - Berguru.com</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 	<link href="assets/css/datepicker3.css" rel="stylesheet">
@@ -39,7 +39,7 @@
 									<li><a href="#">
 										Home
 									</a></li>
-									<li class="active">Kelola Pengguna</li>
+									<li class="active">Kelola Materi</li>
 								</ol>
 							</div>
 							<ul class="nav navbar-top-links navbar-right">
@@ -58,7 +58,7 @@
 									</li>
 									<li class="divider"></li>
 									<li>
-										<div class="dropdown-messages-box"><a href="profile.html" class="pull-left">
+										<div class="dropdown-messages-box"><a href="#" class="pull-left">
 											<img alt="image" class="img-circle" src="assets/images/reading.png">
 										</a>
 										<div class="message-body"><small class="pull-right">1 hour ago</small>
@@ -142,7 +142,7 @@
 				<span class="fa fa-th">&nbsp;</span> Kelola <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-chevron-up"></em></span>
 			</a>
 			<ul class="children collapse in" id="sub-item-kelola">
-				<li><a class="active" href="#">
+				<li><a class="" href="#">
 					Pengguna
 				</a></li>
 				<li><a class="" href="#">
@@ -160,7 +160,7 @@
 				<li><a class="" href="#">
 					Daftar Message
 				</a></li>
-				<li><a class="" href="#">
+				<li><a class="active" href="#">
 					Materi
 				</a></li>
 				<li><a class="" href="#">
@@ -183,22 +183,22 @@
 			<li><a href="#">
 				Home
 			</a></li>
-			<li class="active">Kelola Pengguna</li>
+			<li class="active">Kelola Materi</li>
 		</ol>
 	</div><!--/.row-->
 
 	<div class="panel panel-plain main-container">
 		<div class="panel-heading">
 			<div class="row">
-				<div class="col-md-8">
-					<h1>Kelola Pengguna</h1>
+				<div class="col-md-6">
+					<h1>Kelola Materi</h1>
 					<p>klik sesuai kolom untuk melakukan penyortiran</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-8 col-md-3">
 					<form class="" action="index.html" method="post">
 						<div class="form-group">
 							<div class="input-group plain-group">
-								<input type="text" name="" value="" placeholder="Cari Pengguna" class="form-control dt-search">
+								<input type="text" name="" value="" placeholder="Cari Pendidik" class="form-control dt-search">
 								<span class="input-group-btn">
 									<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
 								</span>
@@ -206,30 +206,38 @@
 						</div>
 					</form>
 				</div>
+				<div class="col-sm-4 col-md-3">
+					<a href="#modal-addmateri" class="btn btn-success btn-normal btn-block" role="button" data-toggle="modal">Tambah Materi</a>
+				</div>
 			</div>
 		</div>
 		<div class="panel-body">
 			<div class="table-responsive">
-				<table class="table datatable">
+				<table class="table datatable mid-v">
 					<thead>
 						<tr>
-							<th>Nama</th>
-							<th>Email</th>
-							<th>Universitas</th>
-							<th>NIM</th>
-							<th>Report</th>
-							<th>Status</th>
+							<th>Nama Materi</th>
+							<th>Kategori</th>
+							<th>Terakhir Diedit</th>
+							<th><i class="fa fa-cloud-download"></i></th>
+							<th><i class="fa fa-eye"></i></th>
 							<th></th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-red text-status">Dibekukan</span></td>
+							<td>
+								<div class="materi-ikon materi-blue"><i class="fa fa-diamond"></i></div>
+								Tips Mendapatkan Empathy Murid
+							</td>
+							<td>Sejarah</td>
+							<td>6/14/18
+								<span class="td-meta">
+									<i class="fa fa-circle"></i> Teddy Nesto
+								</span>
+							</td>
+							<td>17010</td>
+							<td>17009</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
 								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -244,14 +252,20 @@
 								</ul>
 							</div>
 						</td>
-						</tr>
+					</tr>
 						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-red text-status">Dibekukan</span></td>
+							<td>
+								<div class="materi-ikon materi-red"><i class="fa fa-puzzle-piece"></i></div>
+								Tips Mendapatkan Empathy Murid
+							</td>
+							<td>Sejarah</td>
+							<td>6/14/18
+								<span class="td-meta">
+									<i class="fa fa-circle"></i> Teddy Nesto
+								</span>
+							</td>
+							<td>17010</td>
+							<td>17009</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
 								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -266,14 +280,20 @@
 								</ul>
 							</div>
 						</td>
-						</tr>
+					</tr>
 						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-red text-status">Dibekukan</span></td>
+							<td>
+								<div class="materi-ikon materi-black"><i class="fa fa-plane"></i></div>
+								Tips Mendapatkan Empathy Murid
+							</td>
+							<td>Sejarah</td>
+							<td>6/14/18
+								<span class="td-meta">
+									<i class="fa fa-circle"></i> Teddy Nesto
+								</span>
+							</td>
+							<td>17010</td>
+							<td>17009</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
 								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -288,14 +308,20 @@
 								</ul>
 							</div>
 						</td>
-						</tr>
+					</tr>
 						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-blue text-status">Active</span></td>
+							<td>
+								<div class="materi-ikon materi-green"><i class="fa fa-flask"></i></div>
+								Tips Mendapatkan Empathy Murid
+							</td>
+							<td>Sejarah</td>
+							<td>6/14/18
+								<span class="td-meta">
+									<i class="fa fa-circle"></i> Teddy Nesto
+								</span>
+							</td>
+							<td>17010</td>
+							<td>17009</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
 								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -310,14 +336,20 @@
 								</ul>
 							</div>
 						</td>
-						</tr>
+					</tr>
 						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-red text-status">Dibekukan</span></td>
+							<td>
+								<div class="materi-ikon materi-blue"><i class="fa fa-graduation-cap"></i></div>
+								Tips Mendapatkan Empathy Murid
+							</td>
+							<td>Sejarah</td>
+							<td>6/14/18
+								<span class="td-meta">
+									<i class="fa fa-circle"></i> Teddy Nesto
+								</span>
+							</td>
+							<td>17010</td>
+							<td>17009</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
 								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -332,14 +364,20 @@
 								</ul>
 							</div>
 						</td>
-						</tr>
+					</tr>
 						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-red text-status">Dibekukan</span></td>
+							<td>
+								<div class="materi-ikon materi-red"><i class="fa fa-bicycle"></i></div>
+								Tips Mendapatkan Empathy Murid
+							</td>
+							<td>Sejarah</td>
+							<td>6/14/18
+								<span class="td-meta">
+									<i class="fa fa-circle"></i> Teddy Nesto
+								</span>
+							</td>
+							<td>17010</td>
+							<td>17009</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
 								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -354,14 +392,20 @@
 								</ul>
 							</div>
 						</td>
-						</tr>
+					</tr>
 						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-blue text-status">Active</span></td>
+							<td>
+								<div class="materi-ikon materi-black"><i class="fa fa-car"></i></div>
+								Tips Mendapatkan Empathy Murid
+							</td>
+							<td>Sejarah</td>
+							<td>6/14/18
+								<span class="td-meta">
+									<i class="fa fa-circle"></i> Teddy Nesto
+								</span>
+							</td>
+							<td>17010</td>
+							<td>17009</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
 								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -376,14 +420,20 @@
 								</ul>
 							</div>
 						</td>
-						</tr>
+					</tr>
 						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-red text-status">Dibekukan</span></td>
+							<td>
+								<div class="materi-ikon materi-green"><i class="fa fa-pencil"></i></div>
+								Tips Mendapatkan Empathy Murid
+							</td>
+							<td>Sejarah</td>
+							<td>6/14/18
+								<span class="td-meta">
+									<i class="fa fa-circle"></i> Teddy Nesto
+								</span>
+							</td>
+							<td>17010</td>
+							<td>17009</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
 								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -398,73 +448,7 @@
 								</ul>
 							</div>
 						</td>
-						</tr>
-						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-red text-status">Dibekukan</span></td>
-							<td class="td-right">
-								<div class="dropdown td-menu">
-								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-									<i class="fa fa-ellipsis-v"></i>
-								</a>
-								<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li role="separator" class="divider"></li>
-									<li><a href="#">Separated link</a></li>
-								</ul>
-							</div>
-						</td>
-						</tr>
-						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-blue text-status">Active</span></td>
-							<td class="td-right">
-								<div class="dropdown td-menu">
-								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-									<i class="fa fa-ellipsis-v"></i>
-								</a>
-								<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li role="separator" class="divider"></li>
-									<li><a href="#">Separated link</a></li>
-								</ul>
-							</div>
-						</td>
-						</tr>
-						<tr>
-							<td>Jonathan Mahmud</td>
-							<td>jonamud@gmail.com</td>
-							<td>Malang</td>
-							<td>17009928991</td>
-							<td><span class="dot-status dot-red"></span>52</td>
-							<td><span class="text-red text-status">Dibekukan</span></td>
-							<td class="td-right">
-								<div class="dropdown td-menu">
-								<a href="#" class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-									<i class="fa fa-ellipsis-v"></i>
-								</a>
-								<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li role="separator" class="divider"></li>
-									<li><a href="#">Separated link</a></li>
-								</ul>
-							</div>
-						</td>
-						</tr>
+					</tr>
 					</tbody>
 				</table>
 			</div>
@@ -478,6 +462,64 @@
 
 </div>	<!--/.main-->
 
+<!-- Modal -->
+<div class="modal fade" id="modal-addmateri" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <form class="input-55" action="index.html" method="post">
+				<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Tambah Materi Baru</h4>
+	        <h5 class="modal-subtitle">Tambahkan materi baru</h5>
+	      </div>
+	      <div class="modal-body">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="form-group">
+								<label for="">Nama Materi</label>
+								<input type="text" class="form-control" placeholder="Masukkan Nama Materi">
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="form-group">
+								<label for="thefile">Upload File Materi</label>
+								<input type="file" id="thefile" class="input-file" data-multiple-caption="{count} files selected" multiple>
+								<label for="thefile" class="input-label">
+									<span class="placeholder">Pilih file...</span>
+									<span class="tombol"><i class="fa fa-cloud-upload"></i> Upload file</span>
+								</label>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="form-group">
+								<label for="">Pilih Kategori</label>
+								<select name="kategori" id="" class="form-control">
+									<option value="">Pilih kategori</option>
+									<option value="">Kategori A</option>
+									<option value="">Kategori B</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="">Tags</label>
+								<input type="text" class="form-control" placeholder="Masukkan tag anda">
+								<p class="help-block">contoh: sejarah, gratis, edukasi</p>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<label for="">Deskripsi</label>
+							<textarea name="deskripsi" id="" rows="6" class="form-control" placeholder="Deskripsi"></textarea>
+						</div>
+					</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="pull-left btn btn-normal btn-plonk-red" data-dismiss="modal">Close</button>
+	        <button type="button" class="pull-right btn btn-normal btn-success">Publish Materi</button>
+	      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 <script src="assets/js/jquery-1.11.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/chart.min.js"></script>
@@ -487,7 +529,6 @@
 <script src="assets/js/bootstrap-datepicker.js"></script>
 <script src="assets/libs/datatables/datatables.min.js" charset="utf-8"></script>
 <script src="assets/js/custom.js"></script>
-
 
 </body>
 </html>
