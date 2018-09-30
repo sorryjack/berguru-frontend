@@ -40,7 +40,7 @@ $('.datatable').dataTable({
 	'columnDefs': [
 			{
 					'orderable': false,
-					'targets': [-1,'no-sort']
+					'targets': ['no-sort']
 			}
 	],
 	'dom': '<"row"<"col-sm-12 text-right">> <"row"<"col-sm-6"><"col-sm-6">> <"row"<"col-sm-12"t>> <"row"<"col-sm-6"><"col-sm-6"p>>',

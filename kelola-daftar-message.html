@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Kelola Komentar - Berguru.com</title>
+	<title>Kelola Daftar Message - Berguru.com</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 	<link href="assets/css/datepicker3.css" rel="stylesheet">
@@ -39,7 +39,7 @@
 									<li><a href="#">
 										Home
 									</a></li>
-									<li class="active">Kelola Komentar</li>
+									<li class="active">Kelola Daftar Message</li>
 								</ol>
 							</div>
 							<ul class="nav navbar-top-links navbar-right">
@@ -154,10 +154,10 @@
 				<li><a class="" href="#">
 					Konten Permasalahan
 				</a></li>
-				<li><a class="active" href="#">
+				<li><a class="" href="#">
 					Komentar
 				</a></li>
-				<li><a class="" href="#">
+				<li><a class="active" href="#">
 					Daftar Message
 				</a></li>
 				<li><a class="" href="#">
@@ -183,22 +183,29 @@
 			<li><a href="#">
 				Home
 			</a></li>
-			<li class="active">Kelola Komentar</li>
+			<li class="active">Kelola Daftar Message</li>
 		</ol>
 	</div><!--/.row-->
 
 	<div class="panel panel-plain main-container">
 		<div class="panel-heading">
 			<div class="row">
-				<div class="col-md-8">
-					<h1>Kelola Komentar</h1>
+				<div class="col-md-5">
+					<h1>Kelola Daftar Message</h1>
 					<p>klik sesuai kolom untuk melakukan penyortiran</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-7 col-md-4">
+					<div class="btn-group btn-group-justified dt-category" role="group" aria-label="...">
+						<a href="#" type="button" class="btn btn-normal active" data-query="all">All</a>
+						<a href="#" type="button" class="btn btn-normal" data-query="solved">Solved</a>
+						<a href="#" type="button" class="btn btn-normal" data-query="unsolved">Unsolved</a>
+					</div>
+				</div>
+				<div class="col-sm-5 col-md-3">
 					<form class="" action="index.html" method="post">
 						<div class="form-group">
 							<div class="input-group plain-group">
-								<input type="text" name="" value="" placeholder="Cari Komentar" class="form-control dt-search">
+								<input type="text" name="" value="" placeholder="Cari Message" class="form-control dt-search">
 								<span class="input-group-btn">
 									<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
 								</span>
@@ -213,10 +220,8 @@
 				<table class="table datatable">
 					<thead>
 						<tr>
-							<th class="no-sort">Komentar</th>
-							<th class="no-sort">Permasalahan</th>
-							<th width="40"><i class="fa fa-comment"></i></th>
-							<th width="40"><i class="fa fa-eye"></i></th>
+							<th>Permasalahan</th>
+							<th>Komentar</th>
 							<th class="no-sort"></th>
 						</tr>
 					</thead>
@@ -236,13 +241,8 @@
 									<i class="fa fa-clock-o"></i> Sep 24, 2018
 									<i class="fa fa-circle"></i>
 									<i class="fa fa-user"></i> Teddy Nesto
+									<span class="btn btn-custom btn-status-green"><i class="fa fa-check-circle"></i> Solved</span>
 								</div>
-							</td>
-							<td>
-								32
-							</td>
-							<td>
-								330
 							</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
@@ -274,13 +274,8 @@
 									<i class="fa fa-clock-o"></i> Sep 24, 2018
 									<i class="fa fa-circle"></i>
 									<i class="fa fa-user"></i> Teddy Nesto
+									<span class="btn btn-custom btn-status-green"><i class="fa fa-check-circle"></i> Solved</span>
 								</div>
-							</td>
-							<td>
-								21
-							</td>
-							<td>
-								122
 							</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
@@ -312,13 +307,8 @@
 									<i class="fa fa-clock-o"></i> Sep 24, 2018
 									<i class="fa fa-circle"></i>
 									<i class="fa fa-user"></i> Teddy Nesto
+									<span class="btn btn-custom btn-status-red"><i class="fa fa-times-circle"></i> Unsolved</span>
 								</div>
-							</td>
-							<td>
-								12
-							</td>
-							<td>
-								1232
 							</td>
 							<td class="td-right">
 								<div class="dropdown td-menu">
@@ -335,6 +325,7 @@
 								</div>
 							</td>
 						</tr>
+
 					</tbody>
 				</table>
 			</div>
