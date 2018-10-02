@@ -358,17 +358,17 @@ label.input-label >span.tombol{
 .inputfile + label.input-label * {
   pointer-events: none;
 }
-input[type="checkbox"] {
+.styled-checkbox {
   position: absolute;
   opacity: 0;
 }
-input[type="checkbox"] + label {
+.styled-checkbox + label {
   position: relative;
   cursor: pointer;
   padding: 0;
   margin: 0;
 }
-input[type="checkbox"] + label:before {
+.styled-checkbox + label:before {
   content: '';
   /* margin-right: 10px; */
   display: inline-block;
@@ -379,24 +379,24 @@ input[type="checkbox"] + label:before {
   border: 1px solid #c5c5c5;
   border-radius: 4.8px;
 }
-input[type="checkbox"]:hover + label:before {
+.styled-checkbox:hover + label:before {
   background: #8dc74a;
 }
-input[type="checkbox"]:focus + label:before {
+.styled-checkbox:focus + label:before {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
-input[type="checkbox"]:checked + label:before {
+.styled-checkbox:checked + label:before {
   background: #8dc74a;
 }
-input[type="checkbox"]:disabled + label {
+.styled-checkbox:disabled + label {
   color: #b8b8b8;
   cursor: auto;
 }
-input[type="checkbox"]:disabled + label:before {
+.styled-checkbox:disabled + label:before {
   box-shadow: none;
   background: #ddd;
 }
-input[type="checkbox"]:checked + label:after {
+.styled-checkbox:checked + label:after {
   content: '';
   position: absolute;
   left: 5px;
@@ -595,7 +595,7 @@ td > .media{
   font-weight: 500;
 }
 .table>tbody>tr.pesan-read>td{
-  /* font-weight: 500; */
+  /* font-weight: normal; */
   color: #4a4a4a;
 }
 
