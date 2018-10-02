@@ -1,5 +1,6 @@
 body{
   font-family: 'Avenir Next LT Pro';
+  color: #000;
 }
 .navbar-header .navbar-brand{
   background-color: #123899;
@@ -34,6 +35,7 @@ body{
   height: 60px;
   border-radius: 0;
 }
+.user-photo img,
 .dropdown.user-menu .user-photo img{
   width: 100%;
   height: 100%;
@@ -47,6 +49,12 @@ body{
   height: 32px;
   border-radius:50%;
   margin-left: 5px;
+}
+.media .user-photo{
+  width: 49px;
+  height: 49px;
+  border-radius:50%;
+  display: inline-block;
 }
 .dropdown .label{
   width: 20px;
@@ -329,6 +337,56 @@ label.input-label >span.tombol{
 .inputfile + label.input-label * {
   pointer-events: none;
 }
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+input[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+input[type="checkbox"] + label:before {
+  content: '';
+  /* margin-right: 10px; */
+  display: inline-block;
+  /* vertical-align: middle; */
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid #c5c5c5;
+  border-radius: 4.8px;
+}
+input[type="checkbox"]:hover + label:before {
+  background: #8dc74a;
+}
+input[type="checkbox"]:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+input[type="checkbox"]:checked + label:before {
+  background: #8dc74a;
+}
+input[type="checkbox"]:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+input[type="checkbox"]:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+input[type="checkbox"]:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 /* msc */
 .plain-group .input-group-btn,
 .plain-group .input-group-btn .btn,
@@ -410,6 +468,12 @@ label.input-label >span.tombol{
 .table.mid-v>tbody>tr>td{
   vertical-align: middle;
 }
+.table.no-head>tbody>tr:first-child>td{
+  border-top: none;
+}
+.dataTables_wrapper table.no-head thead{
+    display:none;
+}
 .materi-ikon{
   width: 38px;
   height: 38px;
@@ -486,7 +550,19 @@ label.input-label >span.tombol{
   background: #8dc74a;
   transition: all 0.3s ease-in;
 }
-
+.media.mid-v .media-body{
+  vertical-align: middle;
+}
+td > .media{
+  width: 180px;
+}
+.td-pesan{
+  max-width: 680px;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /* table */
 .table{
   margin-bottom: 0;
@@ -497,6 +573,11 @@ label.input-label >span.tombol{
   padding: 24px 15px 18px;
   font-weight: 700;
 }
+.table>tbody>tr.pesan-read>td{
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
 .table>thead>tr>th,
 .table>tbody>tr>th,
 .table>tfoot>tr>th{
@@ -567,6 +648,12 @@ table.dataTable thead th.sorting_desc:after {
   padding: 8px 12px;
   min-width: 90px;
 }
+.btn.btn-ikon{
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px 12px;
+  min-width: auto;
+}
 .btn-default{
   color: #878787;
   background-color: #e7ebf4;
@@ -583,6 +670,17 @@ table.dataTable thead th.sorting_desc:after {
   font-weight: bold;
   border-radius: 14.5px;
 }
+.btn-pesan-label{
+  height: 29px;
+  padding: 6.5px 15px;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-right: 10px;
+  color: #000;
+}
 .btn-status-green{
   color: #2a9650;
   background-color: rgba(42, 150, 80, 0.1);
@@ -590,6 +688,11 @@ table.dataTable thead th.sorting_desc:after {
 .btn-status-red{
   color: #db5959;
   background-color: rgba(219, 89, 89, 0.1);
+}
+.btn-plonk-green{
+  color: #8dc74a;
+  background-color: #fff;
+  border: 1px solid #8dc74a;
 }
 .btn-plonk-blue{
   color: #123899;
@@ -612,6 +715,13 @@ table.dataTable thead th.sorting_desc:after {
 .btn-status-red:focus{
   color: #db5959;
   background-color: rgba(219, 89, 89, 0.1);
+}
+.btn-plonk-green.active,
+.btn-plonk-green:hover,
+.btn-plonk-green:focus{
+  color: #8dc74a;
+  background-color: #efefef;
+  border: 1px solid #8dc74a;
 }
 .btn-plonk-blue.active,
 .btn-plonk-blue:hover,
