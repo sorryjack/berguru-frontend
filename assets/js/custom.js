@@ -67,3 +67,9 @@ Array.prototype.forEach.call( inputs, function( input )
 			label.innerHTML = labelVal;
 	});
 });
+
+$(document).ready(function(){
+	$('.scrollable').mCustomScrollbar({
+    theme: 'minimal-dark',
+  });
+})
