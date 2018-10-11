@@ -72,4 +72,13 @@ $(document).ready(function(){
 	$('.scrollable').mCustomScrollbar({
     theme: 'minimal-dark',
   });
+  var score = $('.rate-result').data('score');
+  $('.rate-result').raty({
+		readOnly: true,
+		starType: 'font'
+	},'score',score);
+  $('.rate-input').raty({
+		readOnly: false,
+		starType: 'font' 
+	},'score',score);
 })

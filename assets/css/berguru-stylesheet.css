@@ -68,7 +68,7 @@ body{
 }
 .nav-breadcrumb{
   display: inline-block;
-  float: left;
+  /* float: left; */
   margin-left: 20px;
   font-family: 'Avenir Next LT Pro Demi';
 
@@ -626,7 +626,9 @@ td > .media{
 .achie-orange{
   background-color: #f5a623;
 }
-
+.text-muted{
+  color: #878787;
+}
 /* table */
 .table{
   margin-bottom: 0;
@@ -817,10 +819,11 @@ table.dataTable thead th.sorting_desc:after {
   border-color: #153b9a;
 
 }
-.dt-category .btn:hover,
+/* .dt-category .btn:hover,
 .dt-category .btn:focus{
 
-}
+} */
+
 /* pagination */
 .pagination>.active>a,
 .pagination>.active>a:focus,
@@ -851,9 +854,9 @@ table.dataTable thead th.sorting_desc:after {
   color: #000;;
 }
 /* modal */
-.modal-content{
+/* .modal-content{
 
-}
+} */
 .modal-header{
   border-bottom: none;
   padding: 30px 30px 15px;
@@ -891,9 +894,9 @@ table.dataTable thead th.sorting_desc:after {
   width: 100%;
   height:100%;
 }
-.profile-meta{
+/* .profile-meta{
 
-}
+} */
 .profile-name{
   font-family: 'Avenir Next LT Pro Demi';
   font-size: 18px;
@@ -1012,7 +1015,14 @@ table.dataTable thead th.sorting_desc:after {
   margin-bottom: 5px;
 }
 /* pesan */
-.panel-pesan{
+.panel-pleft .panel-body.list-pesan{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.pi-left{
+  margin-left: 0;
+}
+/* .panel-pesan{
 
 }
 .panel-pesan > .row{
@@ -1023,7 +1033,7 @@ table.dataTable thead th.sorting_desc:after {
 }
 .panel-pright{
 
-}
+} */
 .panel-pleft .panel-heading h1{
   margin-bottom: 15px;
 }
@@ -1037,18 +1047,18 @@ table.dataTable thead th.sorting_desc:after {
 .pesan-item{
   font-family: 'Avenir Next LT Pro Demi';
   border-bottom: 1px solid #ececec;
-  float: left;
-  width: 100%;
+  width: 94%;
+  height: 76px;
   clear: both;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-left: 10px;
   cursor: pointer;
   position: relative;
+  border-radius: 4px;
+  padding: 10px 5px;
 }
 .pesan-item:last-child{
   border-bottom: none;
 }
-
 .pesan-item.pi-read{
   color: #878787;
 }
@@ -1056,8 +1066,17 @@ table.dataTable thead th.sorting_desc:after {
   font-family: 'Avenir Next LT Pro';
   font-weight: 500;
 }
-.pesan-item.pi-read .badge{
+.pesan-item.pi-read .badge,
+.pesan-item.pi-selected .badge{
   opacity: 0;
+}
+.pesan-item.pi-selected{
+  color: #fff;
+  background-color: #4056f6;
+  border-bottom-color: #fff;
+  width: 97%;
+  margin-left: 5px;
+  padding-left: 10px;
 }
 .pesan-item .user-photo{
   width: 25px;
@@ -1082,8 +1101,8 @@ table.dataTable thead th.sorting_desc:after {
   width: 14%;
   text-align: right;
   position: absolute;
-  right: 0;
-  bottom: 23px;
+  right: 10px;
+  bottom: 13px;
 }
 .pi-right .time{
   display: block;
@@ -1093,9 +1112,10 @@ table.dataTable thead th.sorting_desc:after {
 .pi-right .badge{
   background-color: rgba(219, 89, 89, 0.1);
   color: #db5959;
+  margin-right: -3px;
 }
-.panel-body.detail-pesan{
-  padding-top: 25vh;
+.panel-body.detail-pesan-empty{
+  padding-top: 22vh;
 }
 .detail-pesan-empty{
   text-align: center;
@@ -1108,11 +1128,173 @@ table.dataTable thead th.sorting_desc:after {
   font-weight: 500;
   font-size: 16px;
 }
+.panel-body.detail-pesan{
+  padding: 50px 25px 25px;
+  font-weight: 500;
+
+}
+.detpes-header{
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 20px;
+}
+.detpes-header .user-nama{
+  font-size: 18px;
+
+}
+.detpes-header .user-email{
+  color:#878787;
+}
+.detpes-menu{
+  display: inline-block;
+  float: none;
+  margin-top: 0;
+}
+.dropdown.detpes-menu a.dropdown-toggle{
+color: #c5c5c5;
+font-size: 20px;
+}
+.detpes-header .profile-achievement{
+  display: inline-block;
+}
+.detpes-masalah h4{
+  color: #878787;
+  font-size: 14px;
+  margin: 0 0 5px;
+  font-weight: 500;
+}
+.detpes-masalah{
+  font-size: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 15px;
+}
+.detpes-chats{
+  padding-bottom: 10px;
+}
+.dchat-htime{
+  text-align: center;
+  color: #878787;
+  margin-bottom: 15px;
+}
+.dchat{
+  padding: 15px;
+  font-size: 13px;
+  border-radius: 4px;
+margin-bottom: 15px;
+/* These are technically the same, but use both */
+overflow-wrap: break-word;
+word-wrap: break-word;
+
+-ms-word-break: break-all;
+/* This is the dangerous one in WebKit, as it breaks things wherever */
+word-break: break-all;
+/* Instead use this non-standard one: */
+word-break: break-word;
+
+/* Adds a hyphen where the word breaks, if supported (No Blink) */
+-ms-hyphens: auto;
+-moz-hyphens: auto;
+-webkit-hyphens: auto;
+hyphens: auto;
+}
+.detpes-top .mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical, 
+.detpes-top .mCSB_outside+.mCS-minimal.mCSB_scrollTools_vertical{
+right: -15px;
+}
+.dchat-keluar{
+  border: 1px solid #ececec;
+margin-right: 40%;
+}
+.dchat-masuk{
+  background-color: #f7f7f7;
+  color: #4a4a4a;
+  margin-left: 40%;
+}
+.detpes-write{
+  position: absolute;
+  left: 25px;right: 25px;bottom: 10px;
+  padding-top: 5px;
+  background-color: #ffffff;
+}
+.detpes-write input.form-control{
+border-color: #dddddd;
+height: 53px;
+}
+
+.detpes-write .input-group-btn,
+.detpes-write .input-group-addon{
+  border-left: none;
+  border-top: 1px solid  #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 53px;
+  background-color: #ffffff;
+}
+
+.detpes-write .input-group-btn .btn{
+  color: #ffffff;
+  height: 29px;
+  background-color: #8dc74a;
+  border-radius: 4px;
+}
+.detpes-write .help-block{
+  color: #878787;
+  font-size: 12px;
+}
+.detpes-top{
+  height: calc(100vh - 293px);
+    overflow-x: auto;
+}
+.dchat-footer{
+  margin-top: 10px;
+}
+.dchat-footer .btn{
+  height: 25px;
+  font-size: 10px;
+  padding: 5px 8px;
+  margin-top: 5px;
+}
+.dchat-footer .text-right{
+  color: #878787;
+  padding-top: 15px;
+  font-size: 12px;
+
+}
+.dchat-footer .text-right a{
+  color: #878787;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.rate-result,
+.rate-input{
+  float: left;
+}
+.rate-terbilang,
+.rate-terbilang{
+  color: #f5a623;
+  font-size: 11px;
+  float: left;
+  margin-left: 5px;
+}
+.rate-result font,
+.rate-input font{
+  font-size: 14px;
+  color: #f5a623;
+}
+.detpes-status{
+  font-size: 11px;
+}
 /* responsive */
+
 @media (min-width: 768px){
   .panel-pesan{
     height: 79vh;
   }
+
   .panel-pesan > .row{
     position: relative;
     width: 100%;
@@ -1134,14 +1316,28 @@ table.dataTable thead th.sorting_desc:after {
     padding-left: 0;
     padding-right: 0;
   }
-  .panel-body.detail-pesan{
+  .panel-body.detail-pesan-empty{
     padding-right: 0;
   }
 }
 @media (min-width: 1200px){
-  /* .navbar-header .navbar-brand{
-  width: 16.66666667%;
-  } */
+  
+}
+@media (max-width: 1024px){
+  .dchat-keluar{
+    margin-right: 25%;
+  }
+  .dchat-masuk{
+    margin-left: 25%;
+  }
+}
+@media (max-width: 768px){
+  .dchat-keluar{
+    margin-right: 8%;
+  }
+  .dchat-masuk{
+    margin-left: 8%;
+  }
 }
 @media (max-width: 767px){
   .navbar-custom{
