@@ -69,9 +69,11 @@ Array.prototype.forEach.call( inputs, function( input )
 });
 
 $(document).ready(function(){
+	//custom scroll
 	$('.scrollable').mCustomScrollbar({
     theme: 'minimal-dark',
   });
+  //star rating
   var score = $('.rate-result').data('score');
   $('.rate-result').raty({
 		readOnly: true,
@@ -80,5 +82,8 @@ $(document).ready(function(){
   $('.rate-input').raty({
 		readOnly: false,
 		starType: 'font' 
-	},'score',score);
+	});
+	
+	// popover
+	$('[data-toggle="popover"]').popover({placement: 'top'})
 })
