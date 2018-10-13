@@ -36,6 +36,9 @@ body{
   height: 60px;
   border-radius: 0;
 }
+.user-photo{
+  border-radius: 50%;
+}
 .user-photo img,
 .dropdown.user-menu .user-photo img{
   width: 100%;
@@ -257,7 +260,7 @@ body{
   font-family: 'Avenir Next LT Pro Demi';
 
 }
-.panel-plain .panel-nav a{
+.panel-plain .panel-nav .panel-link{
   color: #000;
 }
 .panel-plain .panel-body{
@@ -489,6 +492,7 @@ label.input-label >span.tombol{
   margin: 20px 10px 5px 0;
   color: #878787;
   font-size: 12px;
+  font-weight: 500;
 }
 .td-meta .fa-circle{
   margin-left: 5px;
@@ -637,6 +641,9 @@ td > .media{
 }
 .text-muted{
   color: #878787;
+}
+.img-fw{
+  width: 100%;
 }
 /* table */
 .table{
@@ -819,6 +826,30 @@ table.dataTable thead th.sorting_desc:after {
 .btn-plonk-red:focus{
   color: #db5959;
   background-color: #efefef;
+  border: 1px solid #d75a56;
+}
+.btn-blue{
+  color: #fff;
+  background-color: #123899;
+  border: 1px solid #153b9a;
+}
+.btn-red{
+  color: #fff;
+  background-color: #db5959;
+  border: 1px solid #d75a56;
+}
+.btn-blue.active,
+.btn-blue:hover,
+.btn-blue:focus{
+  color: #fff;
+  background-color: #123899;
+  border: 1px solid #153b9a;
+}
+.btn-red.active,
+.btn-red:hover,
+.btn-red:focus{
+  color: #fff;
+  background-color: #db5959;
   border: 1px solid #d75a56;
 }
 .dt-category .btn{
@@ -1292,13 +1323,13 @@ height: 53px;
 }
 .rate-result,
 .rate-input{
-  float: left;
+  display: inline-block;
 }
 .rate-terbilang,
 .rate-terbilang{
   color: #f5a623;
   font-size: 11px;
-  float: left;
+  display: inline-block;
   margin-left: 5px;
 }
 .rate-result font,
@@ -1309,6 +1340,87 @@ height: 53px;
 .detpes-status{
   font-size: 11px;
 }
+
+/* pertanyaan */
+.detper-pertanyaan{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 15px 0;
+}
+.detper-jawaban-heading{
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+.detper-jawaban-heading .row > div + div{
+  text-align: right;
+}
+.detper-jawaban-heading .row > div:first-child {
+  font-family: 'Avenir Next LT Pro Demi';
+}
+
+.detper-jawaban-heading .row > div:first-child .fa{
+color: #2a9650;
+margin-right: 10px;
+}
+
+.detper-jawaban-heading .user-photo{
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.detper-jawaban-heading .user-more{
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-left: 5px;
+  background-color: #e7ebf4;
+  color: #123899;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+}
+.detper-jawaban-footer .user-photo{
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.detper-jawaban-footer .user-nama{
+  display: inline-block;
+}
+.detper-jawaban-list{
+  font-weight: 500;
+
+}
+.detper-jawaban-item{
+  border-bottom: 1px solid #ececec;
+  padding: 20px 0;
+}
+.detper-jawaban-item:last-child{
+  border-bottom: none;
+}
+.detper-jawaban{
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 26px;
+}
+.detper-jawaban-heading .text-muted,
+.detper-jawaban-list .text-muted{
+  font-size: 12px;
+  margin-right: 10px;
+}
+.detper-jawaban-footer .btn{
+  text-transform: none;
+}
+.detper-jawaban-footer .rate-input{
+  margin-right: 10px;
+}
+
 /* responsive */
 
 @media (min-width: 768px){
