@@ -262,6 +262,7 @@ body{
 }
 .panel-plain .panel-nav .panel-link{
   color: #000;
+  text-decoration: none;
 }
 .panel-plain .panel-body{
   padding-left: 25px;
@@ -289,7 +290,8 @@ input.form-control {
 }
 .form-control{
   height: 40px;
-  color: #878787;
+  color: #000;
+  font-weight: 500;
 }
 .input-55 .form-control{
   height: 55px;
@@ -361,10 +363,24 @@ label.input-label {
   position: relative;
   margin: 0;
 }
+label.input-label.only-btn {
+  padding: 0;
+  border: none;
+  width: auto;
+  height: auto;
+}
+
 .input-55 label.input-label >span.tombol{
   right: 8px;
   top: 8px;
 }
+.input-55 label.input-label.only-btn >span.tombol{
+  margin-top: 15px;
+  position: relative;
+  display: inline-block;
+  right: 0;
+}
+
 label.input-label >span.tombol{
   color: #d75a56;
   padding: 7px 8px;
@@ -381,6 +397,10 @@ label.input-label >span.tombol{
   background-color: #fff;
   outline: 1px dotted #000;
   outline: -webkit-focus-ring-color auto 5px;
+}
+.input-file:focus + label.input-label.only-btn,
+.input-file + label.input-label.only-btn:hover {
+  outline: none;
 }
 .inputfile + label.input-label * {
   pointer-events: none;
@@ -434,6 +454,12 @@ label.input-label >span.tombol{
   box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+.form-separator{
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
+  margin: 15px 0;
 }
 /* msc */
 .plain-group .input-group-btn,
@@ -644,6 +670,20 @@ td > .media{
 }
 .img-fw{
   width: 100%;
+}
+.wh-90{
+  width: 90px!important;
+  height: 90px!important;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.profil-edit-foto .btn[type="submit"]{
+  margin-top: 15px;
+}
+.help-block{
+  font-weight: 500;
+  color: #878787;
 }
 /* table */
 .table{
@@ -1243,7 +1283,7 @@ word-break: break-word;
 -webkit-hyphens: auto;
 hyphens: auto;
 }
-.detpes-top .mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical, 
+.detpes-top .mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical,
 .detpes-top .mCSB_outside+.mCS-minimal.mCSB_scrollTools_vertical{
 right: -15px;
 }
@@ -1454,7 +1494,7 @@ margin-right: 10px;
   }
 }
 @media (min-width: 1200px){
-  
+
 }
 @media (max-width: 1024px){
   .dchat-keluar{
