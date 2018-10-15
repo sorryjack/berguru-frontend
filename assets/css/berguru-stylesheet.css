@@ -776,7 +776,7 @@ table.dataTable thead th.sorting_desc:after {
 .btn.btn-55{
   height: 55px;
   border-radius: 4px;
-  padding: 8px 12px;
+  padding: 16px 12px;
   min-width: 90px;
 }
 .btn.btn-ikon{
@@ -813,8 +813,16 @@ table.dataTable thead th.sorting_desc:after {
   color: #000;
 }
 .btn-status-green{
-  color: #2a9650;
   background-color: rgba(42, 150, 80, 0.1);
+  color: #2a9650;
+}
+.btn-status-blue{
+  background-color: #e7ebf4;
+  color: #456ecb;
+}
+.btn-status-black{
+  background-color: rgba(74, 74, 74, 0.1);
+  color: #4a4a4a;
 }
 .btn-status-red{
   color: #db5959;
@@ -846,6 +854,18 @@ table.dataTable thead th.sorting_desc:after {
 .btn-status-red:focus{
   color: #db5959;
   background-color: rgba(219, 89, 89, 0.1);
+}
+.btn-status-blue.active,
+.btn-status-blue:hover,
+.btn-status-blue:focus{
+  background-color: #e7ebf4;
+  color: #456ecb;
+}
+.btn-status-black.active,
+.btn-status-black:hover,
+.btn-status-black:focus{
+  background-color: rgba(74, 74, 74, 0.1);
+  color: #4a4a4a;
 }
 .btn-plonk-green.active,
 .btn-plonk-green:hover,
@@ -1236,8 +1256,8 @@ table.dataTable thead th.sorting_desc:after {
   margin-top: 0;
 }
 .dropdown.detpes-menu a.dropdown-toggle{
-color: #c5c5c5;
-font-size: 20px;
+  color: #c5c5c5;
+  font-size: 20px;
 }
 .detpes-header .profile-achievement{
   display: inline-block;
@@ -1266,30 +1286,28 @@ font-size: 20px;
   padding: 15px;
   font-size: 13px;
   border-radius: 4px;
-margin-bottom: 15px;
-/* These are technically the same, but use both */
-overflow-wrap: break-word;
-word-wrap: break-word;
-
--ms-word-break: break-all;
-/* This is the dangerous one in WebKit, as it breaks things wherever */
-word-break: break-all;
-/* Instead use this non-standard one: */
-word-break: break-word;
-
-/* Adds a hyphen where the word breaks, if supported (No Blink) */
--ms-hyphens: auto;
--moz-hyphens: auto;
--webkit-hyphens: auto;
-hyphens: auto;
+  margin-bottom: 15px;
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 .detpes-top .mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical,
 .detpes-top .mCSB_outside+.mCS-minimal.mCSB_scrollTools_vertical{
-right: -15px;
+  right: -15px;
 }
 .dchat-keluar{
   border: 1px solid #ececec;
-margin-right: 40%;
+  margin-right: 40%;
 }
 .dchat-masuk{
   background-color: #f7f7f7;
@@ -1303,8 +1321,8 @@ margin-right: 40%;
   background-color: #ffffff;
 }
 .detpes-write input.form-control{
-border-color: #dddddd;
-height: 53px;
+  border-color: #dddddd;
+  height: 53px;
 }
 
 .detpes-write .input-group-btn,
@@ -1331,15 +1349,15 @@ height: 53px;
   color: #878787;
   font-size: 12px;
   display: inline-block;
-    max-width: 100%;
-    max-height: 17px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+  max-width: 100%;
+  max-height: 17px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .detpes-top{
   height: calc(100vh - 293px);
-    overflow-x: auto;
+  overflow-x: auto;
 }
 .dchat-footer{
   margin-top: 10px;
@@ -1401,8 +1419,8 @@ height: 53px;
 }
 
 .detper-jawaban-heading .row > div:first-child .fa{
-color: #2a9650;
-margin-right: 10px;
+  color: #2a9650;
+  margin-right: 10px;
 }
 
 .detper-jawaban-heading .user-photo{
@@ -1461,6 +1479,128 @@ margin-right: 10px;
   margin-right: 10px;
 }
 
+/* materi */
+.content-filter-top{
+  margin-bottom: 10px;
+}
+.big-filter{
+  height: 35px;
+  width: 100%;
+}
+.content-filter-top p{
+  font-weight: 500;
+}
+
+.content-filter-top .dropdown{
+  margin: 0;
+}
+.content-filter-top .dropdown > a{
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+.content-filter-top .dropdown > a> .fa{
+  font-size: 18px;
+}
+.content-filter-search{
+  margin-bottom: 20px;
+}
+.content-filter-search .input-group .input-group-addon,
+.content-filter-search .input-group .form-control{
+  border: none;
+}
+.content-filter-search .input-group .input-group-addon{
+  padding-left: 20px;
+}
+.content-filter-search .input-group{
+  margin-bottom: 10px;
+}
+.content-filter-search .input-group .form-control:focus{
+  box-shadow: none;
+}
+.content-filter-search .input-group .input-group-addon .fa{
+  font-size: 16px;
+}
+.atau{
+  font-weight: 500;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.content-filter-bottom{
+margin-bottom: 10px;
+}
+.content-filter-bottom h4{
+font-weight: 500;
+font-size: 16px;
+}
+.content-filter-bottom .dropdown{
+float: none;
+display: inline-block;
+}
+.content-filter-bottom .dropdown > a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+.content-filter-bottom .dropdown > a .fa{
+  font-size: 10px;
+}
+.content-item .panel-body{
+  padding-top: 25px;
+}
+.ci-title{
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+  line-height: 28px;
+  color: #000;
+}
+.ci-title.mh-56{
+  min-height: 56px;
+}
+.content-item .td-meta{
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.content-item div.btn{
+  /* text-transform: uppercase; */
+  font-size: 12px;
+  padding-top: 5px;
+}
+.content-tag{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.content-tag a{
+  color: #123899;
+}
+.content-tag .text-muted{
+  margin-right: 10px;
+}
+.ci-right{
+  text-align: right;
+}
+.content-item:hover{
+  box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.1);
+}
+.ci-lokasi,
+.ci-instansi{
+  color: #878787;
+  font-weight: 500;
+}
+.ci-instansi{
+  margin-top: 5px;
+  font-size: 18px;
+}
+.ci-lokasi{
+  font-size: 16px;  
+}
+.ci-lokasi + .btn{
+  margin-top: 30px;
+}
 /* responsive */
 
 @media (min-width: 768px){
@@ -1511,6 +1651,9 @@ margin-right: 10px;
   .dchat-masuk{
     margin-left: 8%;
   }
+  .ci-lokasi + .btn{
+    margin-top: 10px;
+  }
 }
 @media (max-width: 767px){
   .navbar-custom{
@@ -1543,6 +1686,9 @@ margin-right: 10px;
   .panel-body.detail-pesan{
     border-top: 1px solid #ececec;
   }
+  .content-filter-search .input-group{
+    margin-bottom: 0;
+  }
 
 }
 @media (max-width:991px){
@@ -1554,6 +1700,12 @@ margin-right: 10px;
   }
   .panel-plain.panel-pesan .panel-heading .row > div + div{
     margin-top: 0;
+  }
+  .ci-right{
+    margin-top: 10px;
+  }
+  .content-tag{
+    margin-top: 10px;
   }
 }
 @media(max-width:793px){
