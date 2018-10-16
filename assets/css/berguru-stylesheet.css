@@ -519,6 +519,11 @@ label.input-label >span.tombol{
   color: #878787;
   font-size: 12px;
   font-weight: 500;
+  min-width: 325px;
+}
+.td-meta span{
+  display: inline-block;
+  /* white-space:nowrap; */
 }
 .td-meta .fa-circle{
   margin-left: 5px;
@@ -632,7 +637,7 @@ td > .media{
   width: 180px;
 }
 .td-pesan{
-  max-width: 680px;
+  max-width: 675px;
   overflow: hidden;
   white-space: nowrap;
   overflow: hidden;
@@ -722,13 +727,15 @@ table.dataTable thead .sorting_desc:after,
 table.dataTable thead .sorting_asc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:after{
   bottom: 27px;
-  right: 30px;
+  /* right: 30px; */
+  right: 10px;
   width: 10px;
   height: 12px;
   opacity: 1;
-  position: unset;
-  display: inline-block;
-  margin-left: 8px;
+  /* position: unset; */
+  position: absolute;
+  /* display: inline-block; */
+  /* margin-left: 8px; */
 }
 table.dataTable.dt-hidesorting thead .sorting:after,
 table.dataTable.dt-hidesorting thead .sorting_asc:after,
@@ -1596,7 +1603,7 @@ display: inline-block;
   font-size: 18px;
 }
 .ci-lokasi{
-  font-size: 16px;  
+  font-size: 16px;
 }
 .ci-lokasi + .btn{
   margin-top: 30px;
