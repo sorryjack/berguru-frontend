@@ -81,9 +81,15 @@ $(document).ready(function(){
 	},'score',score);
   $('.rate-input').raty({
 		readOnly: false,
-		starType: 'font' 
+		starType: 'font'
 	});
-	
+
 	// popover
-	$('[data-toggle="popover"]').popover({placement: 'top'})
-})
+	$('[data-toggle="popover"]').popover({placement: 'top'});
+
+});
+
+//mahasiswa homepage horiz scroll auto width
+// var jmlcatitem = $('.cfc-item').length;
+// var lebar = (124*jmlcatitem)+100;
+// $('.cfc-list').width(lebar);
