@@ -690,6 +690,12 @@ td > .media{
   font-weight: 500;
   color: #878787;
 }
+a:hover,
+a:focus,
+a:active,
+.dropdown li a:hover{
+  color: #153b9a;
+}
 /* table */
 .table{
   margin-bottom: 0;
@@ -1450,6 +1456,7 @@ table.dataTable thead th.sorting_desc:after {
   text-align: center;
   padding-top: 5px;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 .detper-jawaban-footer .user-photo{
   width: 25px;
@@ -1678,9 +1685,9 @@ table.dataTable thead th.sorting_desc:after {
   font-size: 12px;
 }
 .ci-heading{
-font-weight: 500;
-min-height: 50px;
-margin-bottom: 20px;
+  font-weight: 500;
+  min-height: 50px;
+  margin-bottom: 20px;
 }
 .ci-heading .user-photo{
   width: 48px;
@@ -1718,9 +1725,138 @@ margin-bottom: 20px;
   float: left;
 }
 .ci-heading .angka-container{
-text-align: right;
-padding-left: 0;
+  text-align: right;
+  padding-left: 0;
 }
+/* rightbar */
+.rightbar .profile-point{
+float: left;
+margin-bottom: 5px;
+}
+.rightbar .profile-achievement{
+  /* float: left; */
+  width: 100%;
+}
+.rightbar h3{
+  margin: 0 0 20px;
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+}
+.rightbar .panel-loker,
+.rightbar .panel-materi{
+  margin-bottom: 40px;
+}
+.rightbar .panel-heading{
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.panel-loker .panel-heading{
+  background: #396ef4;
+  color: #fff;
+}
+.panel-materi .panel-heading{
+  position: relative;
+}
+.rightbar .panel-body{
+  position: relative;
+}
+.loker-list,
+.materi-list{
+  list-style: none;
+  padding-left: 0;
+}
+.loker-list li a{
+  margin-bottom: 10px;
+}
+.loker-list li a,
+.materi-list li a{
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+.loker-list{
+  font-family: 'Avenir Next LT Pro Demi';
+
+}
+.loker-list li a:hover,
+.loker-list li a:focus,
+.loker-list li a:active,
+.materi-list li a:hover,
+.materi-list li a:focus,
+.materi-list li a:active{
+  color: #153b9a;
+}
+.loker-list .meta{
+  color: #878787;
+  font-size: 13px;
+}
+.loker-list .meta .lokasi{
+  font-style: italic;
+}
+.loker-list li{
+  padding: 10px 0 5px;
+  margin: 10px 0;
+  border-top: 2px solid #ececec;
+}
+.loker-list li:first-child{
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+.loker-list li:last-child{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.rightbar .btn-more{
+  margin-bottom: -65px;
+  background-color: #fcfcfc;
+}
+.list-more{
+  text-align: center;
+}
+.materi-list li{
+  min-height: 50px;
+  margin-bottom: 5px;
+}
+.materi-list li .title{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 2px;
+  font-family: 'Avenir Next LT Pro Demi';
+}
+.materi-list .meta{
+  font-size: 12px;
+  font-weight: 500;
+}
+.materi-list .meta .author{
+  margin-right: 10px;
+}
+.materi-list .meta .downloaded{
+  color: #878787;
+}
+.materi-list .materi-ikon{
+  float: left;
+}
+.panel-materi .panel-heading .dropdown{
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 55px;
+}
+.panel-materi .panel-heading .dropdown > a{
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+}
+.panel-materi .panel-heading .dropdown > a > .fa{
+  font-size: 10px;
+}
+
 
 /* responsive */
 
@@ -1828,6 +1964,10 @@ padding-left: 0;
   .content-tag{
     margin-top: 10px;
   }
+  .panel-materi .panel-heading .dropdown{
+    top: -15px;
+  }
+
 }
 @media(max-width:793px){
   .main-rightbar .panel-separated-heading{
