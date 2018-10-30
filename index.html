@@ -11,19 +11,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Icon -->
-        <link rel="shortcut icon" href="images/icons/favicon.ico">
-        <link rel="icon" sizes="130x128" href="images/icons/favicon.ico">
-        <link rel="apple-touch-icon" sizes="130x128" href="images/icons/favicon.ico">
+        <link rel="shortcut icon" href="assets/images/title-logo.ico">
+        <link rel="icon" sizes="128x128" href="assets/images/title-logo.ico">
+        <link rel="apple-touch-icon" sizes="128x128" href="assets/images/title-logo.ico">
         
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap.3.3.7/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="assets/libs/owl-carousel.2.3.4/assets/owl.carousel.css">
         <link rel="stylesheet" type="text/css" href="assets/libs/owl-carousel.2.3.4/assets/owl.theme.default.css">
+        <link rel="stylesheet" type="text/css" href="assets/icon-doc/css/fontello.css">
+        
+        <!-- Customs -->
         <link rel="stylesheet" type="text/css" href="assets/css/frontpage.css">
         
     </head>
     <body>
         
+        <div class="sidemenu-overlay hide animated"></div>
         <header class="home">
             <nav class="navbar navbar-default nav-front">
                 <div class="container">
@@ -31,7 +35,7 @@
                         <div class="col-xs-12">
                             <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <button type="button" class="navbar-toggle collapsed">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
@@ -43,12 +47,12 @@
                             </div>
                             
                             <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <div class="collapse navbar-collapse animated">
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Kategori <span class="bgicon bgicon-arrow-down-white"></span>
+                                            Kategori <span class="bgicon icon-arrow-down"></span>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Matematika</a></li>
@@ -65,8 +69,8 @@
                                     <li><a href="#">Tentang Kami</a></li>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="#"><span class="bgicon bgicon-lock"></span> Masuk</a></li>
-                                    <li class="nav-button"><a href="#"><span class="bgicon bgicon-add-person"></span> Daftar</a></li>
+                                    <li><a href="#"><span class="bgicon icon-lock"></span> Masuk</a></li>
+                                    <li class="nav-button"><a href="#"><span class="bgicon icon-user-add"></span> Daftar</a></li>
                                 </ul>
                             </div><!-- /.navbar-collapse -->
                         </div>
@@ -82,7 +86,7 @@
                             <form class="form-inline header-search">
                                 <div class="form-group">
                                     <div class="input-group search-field">
-                                        <span class="input-group-addon"><i class="bgicon bgicon-search"></i></span>
+                                        <span class="input-group-addon"><i class="bgicon icon-search"></i></span>
                                         <input type="text" class="form-control" placeholder="Apa pertanyaan anda?">
                                         <span class="input-group-addon select-category">
                                             <select>
@@ -112,7 +116,7 @@
                         <div class="col-sm-6">
                             <p>Telusuri sesuai kategori</p>
                         </div>
-                        <div class="col-sm-6 category-more">
+                        <div class="col-sm-6 category-more hidden-xs">
                             <p><a href="#">Muat lebih banyak</a></p>
                         </div>
                     </div>
@@ -125,7 +129,7 @@
                                     <a href="#">
                                         <div class="panel panel-default">
                                             <div class="panel-body">
-                                                <span class="bgicon bgicon-list"></span>
+                                                <span class="bgicon icon-lists"></span>
                                                 <p>Semua</p>
                                             </div>
                                         </div>
@@ -135,7 +139,7 @@
                                     <a href="#">
                                         <div class="panel panel-default">
                                             <div class="panel-body">
-                                                <span class="bgicon bgicon-learn-math"></span>
+                                                <span class="bgicon icon-material-puzzle"></span>
                                                 <p>Matematika</p>
                                             </div>
                                         </div>
@@ -145,7 +149,7 @@
                                     <a href="#">
                                         <div class="panel panel-default">
                                             <div class="panel-body">
-                                                <span class="bgicon bgicon-learn-indo"></span>
+                                                <span class="bgicon icon-material-note"></span>
                                                 <p>B. Indonesia</p>
                                             </div>
                                         </div>
@@ -155,7 +159,7 @@
                                     <a href="#">
                                         <div class="panel panel-default">
                                             <div class="panel-body">
-                                                <span class="bgicon bgicon-learn-physics"></span>
+                                                <span class="bgicon icon-material-stack"></span>
                                                 <p>Fisika</p>
                                             </div>
                                         </div>
@@ -165,7 +169,7 @@
                                     <a href="#">
                                         <div class="panel panel-default">
                                             <div class="panel-body">
-                                                <span class="bgicon bgicon-learn-history"></span>
+                                                <span class="bgicon icon-material-book"></span>
                                                 <p>Sejarah</p>
                                             </div>
                                         </div>
@@ -175,7 +179,7 @@
                                     <a href="#">
                                         <div class="panel panel-default">
                                             <div class="panel-body">
-                                                <span class="bgicon bgicon-learn-social"></span>
+                                                <span class="bgicon icon-material-people"></span>
                                                 <p>Ilmu Sosial</p>
                                             </div>
                                         </div>
@@ -185,11 +189,14 @@
                                     <a href="#">
                                         <div class="panel panel-default">
                                             <div class="panel-body">
-                                                <span class="bgicon bgicon-learn-sports"></span>
+                                                <span class="bgicon icon-material-basketball"></span>
                                                 <p>Olahraga</p>
                                             </div>
                                         </div>
                                     </a>
+                                </li>
+                                <li class="learn-load visible-xs">
+                                    <p><a href="#">Muat lebih banyak</a></p>
                                 </li>
                             </ul>
                         </div>
@@ -200,7 +207,7 @@
             <section class="post-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-md-8">
                             
                             <!-- Pertanyaan -->
                             <div class="row content-title ask-title">
@@ -213,10 +220,10 @@
                             </div>
                             
                             <div class="row ask-header">
-                                <div class="col-md-4">
+                                <div class="col-lg-4">
                                     <p class="ask-count">1,414 pertanyaan ditemukan</p>
                                 </div>
-                                <div class="col-md-8 ask-menu">
+                                <div class="col-lg-8 ask-menu">
                                     <ul class="nav nav-tabs nav-ask" role="tablist">
                                         <li role="presentation" class="active">
                                             <a href="#all" aria-controls="home" role="tab" data-toggle="tab">Semua</a>
@@ -256,7 +263,7 @@
                                                                 </div>
                                                                 <div class="media-body">
                                                                     <h4 class="media-heading">Bapak Teddy</h4>
-                                                                    <p class="ask-time"><span class="bgicon bgicon-clock"></span> 6 jam yang lalu</p>
+                                                                    <p class="ask-time"><span class="bgicon icon-clock"></span> 6 jam yang lalu</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -285,9 +292,9 @@
                                                     
                                                     <!-- Comment -->
                                                     <div class="row panel-ask-answer">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 ask-commentator">
                                                             <ul class="list-inline list-commentator">
-                                                                <li>
+                                                                <li class="commentator-caption">
                                                                     <p>Penjawab</p>
                                                                 </li>
                                                                 <li>
@@ -413,7 +420,7 @@
                         </div>
                         
                         <!-- Sidebar -->
-                        <div class="col-lg-4">
+                        <div class="col-md-4">
                            
                             <!-- Konten Iklan -->
                             <div class="adv-content">
@@ -432,7 +439,7 @@
                                         <div class="media">
                                             <div class="media-left media-middle">
                                                 <div class="media-object">
-                                                    <span class="bgicon bgicon-comment"></span>
+                                                    <span class="bgicon icon-comment"></span>
                                                 </div>
                                             </div>
                                             <div class="media-body">
@@ -465,7 +472,7 @@
                                             <div class="media-body">
                                                 <h4 class="media-heading">Philip Newman</h4>
                                                 <p class="student-solution">31 Solusi</p>
-                                                <a href="#" class="tag tag-orange student-point"><span class="bgicon bgicon-point"></span> 1205</a>
+                                                <a href="#" class="tag tag-orange student-point"><span class="bgicon icon-point"></span> 1205</a>
                                                 <a href="#" class="tag tag-blue student-msg">Kirim Pesan</a>
                                             </div>
                                         </div>
@@ -480,7 +487,7 @@
                                             <div class="media-body">
                                                 <h4 class="media-heading">Philip Newman</h4>
                                                 <p class="student-solution">31 Solusi</p>
-                                                <a href="#" class="tag tag-orange student-point"><span class="bgicon bgicon-point"></span> 1205</a>
+                                                <a href="#" class="tag tag-orange student-point"><span class="bgicon icon-point"></span> 1205</a>
                                                 <a href="#" class="tag tag-blue student-msg">Kirim Pesan</a>
                                             </div>
                                         </div>
@@ -497,12 +504,12 @@
                                 <div class="panel-body">
                                     <div class="vacancy-item">
                                         <h4 class="vacancy-title"><a href="#">Guru Tingkat SD yang Ulet, Bisa Microsoft Office Nilai Plus</a></h4>
-                                        <p class="vacancy-desc">SDN Sukoharjo 1 <span class="bgicon bgicon-map-marker"></span> <i>Malang Kota</i></p>
+                                        <p class="vacancy-desc">SDN Sukoharjo 1 <span class="bgicon icon-map-marker"></span> <i>Malang Kota</i></p>
                                         <a href="#" class="vacancy-close"><span class="bgicon bgicon-close"></span></a>
                                     </div>
                                     <div class="vacancy-item">
                                         <h4 class="vacancy-title"><a href="#">Guru Tingkat SD yang Ulet, Bisa Microsoft Office Nilai Plus</a></h4>
-                                        <p class="vacancy-desc">SDN Sukoharjo 1 <span class="bgicon bgicon-map-marker"></span> <i>Malang Kota</i></p>
+                                        <p class="vacancy-desc">SDN Sukoharjo 1 <span class="bgicon icon-map-marker"></span> <i>Malang Kota</i></p>
                                         <a href="#" class="vacancy-close"><span class="bgicon bgicon-close"></span></a>
                                     </div>
                                 </div>
@@ -524,12 +531,12 @@
                                         <div class="media cat-diamond">
                                             <div class="media-left media-middle">
                                                 <div class="media-object">
-                                                    <span class="bgicon bgicon-diamond"></span>
+                                                    <span class="bgicon icon-material-diamond"></span>
                                                 </div>
                                             </div>
                                             <div class="media-body">
                                                 <h4 class="media-heading"><a href="#">Tips mendapatkan Emphaty Murid</a></h4>
-                                                <p>Post oleh <cite>Carol Arnold</cite> <span class="count"><i class="bgicon bgicon-download"></i> 1893</span></p>
+                                                <p>Post oleh <cite>Carol Arnold</cite> <span class="count"><i class="bgicon icon-download"></i> 1893</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -537,12 +544,12 @@
                                         <div class="media cat-puzzle">
                                             <div class="media-left media-middle">
                                                 <div class="media-object">
-                                                    <span class="bgicon bgicon-puzzle"></span>
+                                                    <span class="bgicon icon-material-puzzle"></span>
                                                 </div>
                                             </div>
                                             <div class="media-body">
                                                 <h4 class="media-heading"><a href="#">Tips mendapatkan Emphaty Murid</a></h4>
-                                                <p>Post oleh <cite>Carol Arnold</cite> <span class="count"><i class="bgicon bgicon-download"></i> 1893</span></p>
+                                                <p>Post oleh <cite>Carol Arnold</cite> <span class="count"><i class="bgicon icon-download"></i> 1893</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -550,12 +557,12 @@
                                         <div class="media cat-chemistry">
                                             <div class="media-left media-middle">
                                                 <div class="media-object">
-                                                    <span class="bgicon bgicon-chemistry"></span>
+                                                    <span class="bgicon icon-material-chemical"></span>
                                                 </div>
                                             </div>
                                             <div class="media-body">
                                                 <h4 class="media-heading"><a href="#">Tips mendapatkan Emphaty Murid</a></h4>
-                                                <p>Post oleh <cite>Carol Arnold</cite> <span class="count"><i class="bgicon bgicon-download"></i> 1893</span></p>
+                                                <p>Post oleh <cite>Carol Arnold</cite> <span class="count"><i class="bgicon icon-download"></i> 1893</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -563,12 +570,12 @@
                                         <div class="media cat-graduation">
                                             <div class="media-left media-middle">
                                                 <div class="media-object">
-                                                    <span class="bgicon bgicon-graduation"></span>
+                                                    <span class="bgicon icon-material-graduation"></span>
                                                 </div>
                                             </div>
                                             <div class="media-body">
                                                 <h4 class="media-heading"><a href="#">Tips mendapatkan Emphaty Murid</a></h4>
-                                                <p>Post oleh <cite>Carol Arnold</cite> <span class="count"><i class="bgicon bgicon-download"></i> 1893</span></p>
+                                                <p>Post oleh <cite>Carol Arnold</cite> <span class="count"><i class="bgicon icon-download"></i> 1893</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -576,12 +583,12 @@
                                         <div class="media cat-plane">
                                             <div class="media-left media-middle">
                                                 <div class="media-object">
-                                                    <span class="bgicon bgicon-plane"></span>
+                                                    <span class="bgicon icon-material-plane"></span>
                                                 </div>
                                             </div>
                                             <div class="media-body">
                                                 <h4 class="media-heading"><a href="#">Tips mendapatkan Emphaty Murid</a></h4>
-                                                <p>Post oleh <cite>Carol Arnold</cite> <span class="count"><i class="bgicon bgicon-download"></i> 1893</span></p>
+                                                <p>Post oleh <cite>Carol Arnold</cite> <span class="count"><i class="bgicon icon-download"></i> 1893</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -598,7 +605,7 @@
         <footer class="content-footer">
             <div class="container">
                 <div class="row footer-menu">
-                    <div class="col-lg-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="footer-img">
                             <img src="assets/images/footer-logo.png" width="144" height="33" alt="Logo" class="img-responsive">
                         </div>
@@ -613,7 +620,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-sm-4 col-md-2">
                         <h4 class="footer-title">Tentang Kami</h4>
                         <ul class="footer-list-menu">
                             <li><a href="#">Tentang Kami</a></li>
@@ -622,7 +629,7 @@
                             <li><a href="#">Materi dari Berguru.com</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-sm-4 col-md-2">
                         <h4 class="footer-title">Bantuan</h4>
                         <ul class="footer-list-menu">
                             <li><a href="#">Syarat &amp; Ketentuan</a></li>
@@ -630,7 +637,7 @@
                             <li><a href="#">Iklan</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 newsletter-content">
+                    <div class="col-sm-12 col-md-4 newsletter-content">
                         <h4 class="footer-title">Langganan Berita</h4>
                         <p class="newsletter-caption">
                             Langganan berita dari <a href="#">Berguru.com</a> dan kita akan memberikan kabar tentang promo
@@ -644,19 +651,19 @@
                     </div>
                 </div>
                 <div class="row footer-copyright">
-                    <div class="col-lg-4">
-                        <ul class="list-inline">
-                            <li><a href="#"><span class="bgicon bgicon-twitter"></span></a></li>
-                            <li><a href="#"><span class="bgicon bgicon-facebook"></span></a></li>
-                            <li><a href="#"><span class="bgicon bgicon-google-plus"></span></a></li>
-                            <li><a href="#"><span class="bgicon bgicon-instagram"></span></a></li>
-                            <li><a href="#"><span class="bgicon bgicon-rss"></span></a></li>
+                    <div class="col-sm-12 col-md-4">
+                        <ul class="list-inline list-social">
+                            <li><a href="#"><span class="bgicon icon-social-twitter"></span></a></li>
+                            <li><a href="#"><span class="bgicon icon-social-facebook"></span></a></li>
+                            <li><a href="#"><span class="bgicon icon-social-google-plus"></span></a></li>
+                            <li><a href="#"><span class="bgicon icon-social-instagram"></span></a></li>
+                            <li><a href="#"><span class="bgicon icon-social-rss"></span></a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-6 col-md-4">
                         <p>&copy; 2018 Hak Cipta Dilindungi Undang-Undang</p>
                     </div>
-                    <div class="col-lg-4 support-by">
+                    <div class="col-sm-6 col-md-4 support-by">
                         <p>Didukung oleh</p>
                         <img src="assets/images/logo-um.png" width="36" height="36" alt="Logo UM" class="footer-support">
                         <img src="assets/images/logo-um-flat.png" width="42" height="33" alt="Logo UM" class="footer-support">
@@ -673,16 +680,39 @@
             $('.testi-carousel').owlCarousel({
                 loop: true,
                 margin: 40,
-                nav: true,
+                nav: false,
+                dots: true,
                 responsive:{
                     0:{
                         items:1
                     },
-                    600:{
+                    640:{
                         items:2
                     }
                 }
             });
+        </script>
+        <script type="text/javascript">
+
+            var overlay = $('.sidemenu-overlay');
+            var sidemenu = $('.navbar-collapse');
+            var toggle = $('.navbar-toggle');
+
+            overlay.on("click", function(){
+                sidemenu.addClass('slideOutLeft');
+                sidemenu.removeClass('slideInLeft');
+                $(this).addClass('fadeOut');
+                $(this).addClass('hide');
+            });
+
+            toggle.on("click", function(){
+                sidemenu.css('display', 'block');
+                sidemenu.addClass('slideInLeft');
+                sidemenu.removeClass('slideOutLeft');
+                overlay.removeClass('hide');
+                overlay.removeClass('fadeOut');
+            });
+
         </script>
         
     </body>
